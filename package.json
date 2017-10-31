@@ -1,6 +1,6 @@
 {
   "name": "damascus",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "Get random districts names of Damascus",
   "main": "src/index.js",
   "scripts": {
