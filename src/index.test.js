@@ -13,8 +13,8 @@ describe('syria-districts', () => {
       expect(damascus.all).to.satisfy(isArrayOfStrings)
     })
 
-    it('should contain `Al-Midan`', () => {
-      expect(damascus.all).to.include('Al-Midan')
+    it('should contain `Municipality - Al-Midan`', () => {
+      expect(damascus.all).to.include('Municipality - Al-Midan')
     })
   })
 
