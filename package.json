@@ -1,0 +1,49 @@
+{
+  "name": "damascus",
+  "version": "0.0.0-semantically-released",
+  "description": "Get random districts names of Syria",
+  "main": "src/index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "commit": "git-cz",
+    "lint": "eslint --fix src/*.js",
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hadabo/damascus.git"
+  },
+  "keywords": [
+    "random",
+    "syria",
+    "districts"
+  ],
+  "author": "Abdul-hadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hadabo/damascus/issues"
+  },
+  "homepage": "https://github.com/hadabo/damascus#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "eslint": "4.9.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
+    "husky": "0.14.3",
+    "istanbul": "0.4.5",
+    "mocha": "4.0.1",
+    "semantic-release": "8.2.2"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}
