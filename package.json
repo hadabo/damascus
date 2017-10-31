@@ -1,7 +1,7 @@
 {
   "name": "damascus",
   "version": "0.0.0-semantically-released",
-  "description": "Get random districts names of Syria",
+  "description": "Get random districts names of Damascus",
   "main": "src/index.js",
   "scripts": {
     "precommit": "npm test",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "random",
+    "damascus",
     "syria",
     "districts"
   ],
