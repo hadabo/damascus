@@ -1,4 +1,6 @@
 # Damascus
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/hadabo/damascus.svg)](https://greenkeeper.io/)
 [![Build Status][build-badge]][build]
 [![MIT License][license-badge]][LICENSE]
 [![Semantic release][semantic-release]][semantic]
