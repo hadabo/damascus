@@ -1,21 +1,37 @@
-sudo: false
 language: node_js
+
 cache:
   directories:
     - node_modules
+
 notifications:
   email: true
+
 node_js:
   - '8'
+
 before_script:
   - npm prune
+
 script:
   - npm run lint
   - npm run test
+
 after_success:
   - npm run coverage
-  - npm run semantic-release
-  - npm publish
+  # - npm run semantic-release
+  # - npm publish
+
+jobs:
+  include:
+    - stage: npm release
+      node_js: '8'
+      script: echo "Deploying to npm ..."
+      deploy:
+        provider: npm
+        api_key: $NPM_API_KEY
+        on: deploy-npm-release
+
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
