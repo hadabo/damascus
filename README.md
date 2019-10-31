@@ -5,6 +5,7 @@
 [![MIT License][license-badge]][LICENSE]
 [![Semantic release][semantic-release]][semantic]
 [![Damascus package][npm-dm]][damascus]
+[![Coverage Status][coveralls-badge]][coveralls]
 
 Get random districts names of Damascus.
 
@@ -35,3 +36,5 @@ This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) a
 [semantic]: https://www.npmjs.com/package/semantic-release
 [npm-dm]: https://img.shields.io/npm/dm/damascus.svg?style=flat-square
 [damascus]: https://www.npmjs.com/package/damascus
+[coveralls]: https://coveralls.io/github/hadabo/damascus?branch=master
+[coveralls-badge]: https://coveralls.io/repos/github/hadabo/damascus/badge.svg?branch=master
