@@ -15,6 +15,7 @@ script:
 after_success:
   - npm run coverage
   - npm run semantic-release
+  - npm publish
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
