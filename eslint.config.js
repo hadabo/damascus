@@ -11,7 +11,7 @@ export default [
       }
     },
     rules: {
-      "semi": ["error", "always"],
+      "semi": ["error", "never"],
       "quotes": ["error", "single"]
     }
   }

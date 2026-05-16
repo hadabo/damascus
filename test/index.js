@@ -1,6 +1,6 @@
-import { describe, it } from 'mocha';
-import { expect } from 'chai';
-import * as syria from '../src/index.js';
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+import * as syria from '../src/index.js'
 
 describe('syria-regions', () => {
   describe('getAll', () => {

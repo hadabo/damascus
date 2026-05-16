@@ -1,9 +1,9 @@
-import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const syriaData = JSON.parse(readFileSync(join(__dirname, 'syria.json'), 'utf8'));
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const syriaData = JSON.parse(readFileSync(join(__dirname, 'syria.json'), 'utf8'))
 
 function getAll () {
   return syriaData
