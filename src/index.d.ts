@@ -3,26 +3,38 @@ export interface LocalizedName {
   ar: string;
 }
 
+export interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
 export interface Neighborhood {
   id: string;
+  pcode?: string;
+  coordinates?: Coordinates;
   name: LocalizedName;
 }
 
 export interface Municipality {
   id: string;
+  pcode?: string;
+  coordinates?: Coordinates;
   name: LocalizedName;
   neighborhoods?: Neighborhood[];
 }
 
 export interface District {
   id: string;
+  pcode?: string;
+  coordinates?: Coordinates;
   name: LocalizedName;
 }
 
 export interface Governorate {
   id: string;
+  pcode?: string;
+  coordinates?: Coordinates;
   name: LocalizedName;
-  municipalities?: Municipality[];
   districts?: District[];
 }
 

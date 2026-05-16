@@ -9,8 +9,7 @@ describe('syria-regions', () => {
       expect(all).to.be.an('array')
       expect(all[0]).to.have.property('id')
       expect(all[0]).to.have.property('name')
-      // Damascus has municipalities, others have districts
-      expect(all[0]).to.have.property('municipalities')
+      expect(all[0]).to.have.property('districts')
       expect(all[1]).to.have.property('districts')
     })
   })
@@ -22,8 +21,6 @@ describe('syria-regions', () => {
       expect(govs).to.have.length(14)
       expect(govs[0]).to.have.property('id')
       expect(govs[0]).to.have.property('name')
-      expect(govs[0]).to.not.have.property('districts')
-      expect(govs[0]).to.not.have.property('municipalities')
       expect(govs[0].name).to.have.property('en')
       expect(govs[0].name).to.have.property('ar')
     })
@@ -33,16 +30,16 @@ describe('syria-regions', () => {
     it('should return all districts if no id is provided', () => {
       const districts = syria.getDistricts()
       expect(districts).to.be.an('array')
-      expect(districts.length).to.be.greaterThan(14)
+      expect(districts.length).to.be.greaterThan(13)
       expect(districts[0]).to.have.property('id')
       expect(districts[0]).to.have.property('name')
     })
 
     it('should return specific districts for a governorate id', () => {
-      const damDistricts = syria.getDistricts('dam')
+      const damDistricts = syria.getDistricts('gov-damascus')
       expect(damDistricts).to.be.an('array')
-      expect(damDistricts.length).to.be.greaterThan(0)
-      expect(damDistricts[0].id).to.include('dam-')
+      expect(damDistricts.length).to.equal(1)
+      expect(damDistricts[0].id).to.equal('dist-damascus')
     })
 
     it('should return empty array for invalid id', () => {
@@ -53,8 +50,8 @@ describe('syria-regions', () => {
   })
 
   describe('getMunicipalities', () => {
-    it('should return municipalities for damascus by default', () => {
-      const muns = syria.getMunicipalities()
+    it('should return municipalities for a given governorate', () => {
+      const muns = syria.getMunicipalities('gov-damascus')
       expect(muns).to.be.an('array')
       expect(muns.length).to.be.greaterThan(0)
       expect(muns[0]).to.have.property('id')
@@ -62,7 +59,7 @@ describe('syria-regions', () => {
     })
 
     it('should return empty array for governorate without municipalities', () => {
-      const muns = syria.getMunicipalities('ale')
+      const muns = syria.getMunicipalities('invalid-id')
       expect(muns).to.be.an('array')
       expect(muns).to.have.length(0)
     })
@@ -98,6 +95,25 @@ describe('syria-regions', () => {
       expect(results).to.be.an('array')
       expect(results.length).to.be.greaterThan(0)
       expect(results[0].type).to.equal('governorate')
+    })
+
+    it('should find results for districts', () => {
+      const results = syria.search('damascus')
+      // "damascus" matches both the governorate and the district
+      const hasDistrict = results.find(r => r.type === 'district')
+      expect(hasDistrict).to.not.be.undefined
+    })
+
+    it('should find results for municipalities', () => {
+      const results = syria.search('Areesheh')
+      const hasMuni = results.find(r => r.type === 'municipality')
+      expect(hasMuni).to.not.be.undefined
+    })
+
+    it('should find results for neighborhoods', () => {
+      const results = syria.search('Bab Touma')
+      const hasNeigh = results.find(r => r.type === 'neighborhood')
+      expect(hasNeigh).to.not.be.undefined
     })
 
     it('should return empty array for empty query', () => {

@@ -1,4 +1,4 @@
-# Syria Regions (focusing on Damascus)
+# Damascus (Syrian Regional Data API)
 
 [![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/hadabo/damascus.svg?style=flat-square)](https://snyk.io/test/github/hadabo/damascus)
 [![Build Status][build-badge]][build]
@@ -7,7 +7,11 @@
 [![Damascus package][npm-dm]][damascus]
 [![Coverage Status][coveralls-badge]][coveralls]
 
-Get standardized, structured data for the governorates, districts, municipalities, and neighborhoods of Syria, with a **deep-dive into Damascus**. The data is bilingual (Arabic and English) and structured to align with UN OCHA Common Operational Datasets (COD), making it the perfect source of truth for cascading dropdowns and autocompletes in applications like real estate listings, directories, and delivery platforms.
+The ultimate **environment-agnostic source of truth** for Syrian administrative data. 
+
+This package provides a meticulously standardized, deeply hierarchical dataset covering all of Syria (Governorates ➔ Districts ➔ Municipalities ➔ Neighborhoods/Populated Places). 
+
+It is completely aligned with **UN OCHA Common Operational Datasets (COD)**, featuring official P-Codes and geo-spatial coordinates. It's the perfect backbone for cascading dropdowns, map plots, and autocompletes in applications like real estate listings, directories, and delivery platforms.
 
 ## Installation
 
@@ -16,64 +20,70 @@ This package is distributed via npm:
 npm install damascus
 ```
 
-## Usage (ES Modules & TypeScript)
+## Usage (Core API)
 
 Modern projects should import the package via ES Modules. Full TypeScript definitions (`.d.ts`) are included natively for excellent IDE support.
 
 ```typescript
-import { search, getAll, getGovernorates, getMunicipalities, getNeighborhoods, SearchResult } from 'damascus';
+import { search, getAll, getGovernorates, getDistricts, getMunicipalities, getNeighborhoods } from 'damascus';
 
 // 1. Search API (Perfect for Autocomplete)
-const result: SearchResult[] = search('دمشق');
+const result = search('دمشق');
 
-// 2. Get all structured data
-const allData = getAll();
-
-// 3. Get an array of the 14 Syrian governorates
+// 2. Get the 14 Syrian governorates
 const governorates = getGovernorates();
 /* 
 [
-  { id: 'dam', name: { en: 'Damascus', ar: 'دمشق' } },
-  { id: 'ale', name: { en: 'Aleppo', ar: 'حلب' } },
+  { 
+    id: 'dam', 
+    pcode: 'SY01', 
+    coordinates: { lat: 33.5138, lng: 36.2765 },
+    name: { en: 'Damascus', ar: 'دمشق' } 
+  },
   ...
 ]
 */
 
-// 4. Damascus Specific APIs (Hierarchical)
-const damascusMunicipalities = getMunicipalities('dam'); 
-/*
-[
-  { id: 'dam-municipality-ancient-city-old-city', name: { en: 'Ancient City (Old City)', ar: 'المدينة القديمة' } },
-  ...
-]
-*/
-
-const oldCityNeighborhoods = getNeighborhoods('dam-municipality-ancient-city-old-city');
-/*
-[
-  { id: 'dam-districts-bab-tuma', name: { en: 'Bab Tuma', ar: 'باب توما' } },
-  ...
-]
-*/
+// 3. Drill down into the unified hierarchy
+const damascusDistricts = getDistricts('dam'); 
+const municipalities = getMunicipalities('dam-damascus'); 
+const neighborhoods = getNeighborhoods('dam-municipality-ancient-city-old-city');
 ```
 
-### Legacy CommonJS Usage
-If you are still using CommonJS:
-```javascript
-const syria = require('damascus');
-const searchResults = syria.search('Bab Tuma'); 
+## Usage (React Hooks)
+
+To eliminate boilerplate when building cascading dropdowns, we provide highly-optimized React hooks out of the box!
+
+```typescript
+import { useGovernorates, useDistricts, useMunicipalities } from 'damascus/react';
+import { useState } from 'react';
+
+function LocationSelector() {
+  const [govId, setGovId] = useState('dam');
+  const [distId, setDistId] = useState('dam-damascus');
+
+  const governorates = useGovernorates();
+  const districts = useDistricts(govId); // Automatically reacts to govId changes!
+  const municipalities = useMunicipalities(distId);
+
+  return (
+    // Render your dropdowns...
+  )
+}
 ```
 
 ## Features
 
-- **Hierarchical Damascus Data**: Perfect for UI components (Select Governorate -> Select Municipality -> Select Neighborhood).
-- **Search Utility**: Built-in search function to easily query the data for autocompletes.
+- **Whole of Syria Coverage**: Includes massive generated datasets for all 14 governorates down to populated places.
+- **UN OCHA P-Codes**: Built-in standard `pcode` identifiers for reliable cross-dataset interoperability.
+- **Geo-Spatial Coordinates**: Every level includes precise `{ lat, lng }` coordinates.
+- **React Hooks included**: Exported via `damascus/react` for instant UI integration.
+- **Search Utility**: Built-in search function to easily query the deep data tree.
 - **Bilingual**: All items include English (`en`) and Arabic (`ar`) names.
-- **TypeScript Support**: Includes type definitions (`.d.ts`) out of the box for excellent IDE support.
-- **Backward Compatible**: Maintains support for legacy `getDistricts()` API.
+- **TypeScript Support**: First-class types mapping the entire hierarchy.
 
 ## Other
-This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) as a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release), and expanded to be a robust source of truth for Syrian regional data.
+This library was developed by [Abdulhadi Hawari](https://twitter.com/@hadabo) as a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release), and expanded to be a robust source of truth for Syrian regional data.
 
 [build-badge]: https://img.shields.io/github/actions/workflow/status/hadabo/damascus/ci.yml?style=flat-square
 [build]: https://github.com/hadabo/damascus/actions

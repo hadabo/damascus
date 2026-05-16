@@ -15,39 +15,31 @@ function getDistricts (governorateId) {
   if (governorateId) {
     const gov = syriaData.find(g => g.id === governorateId)
     if (!gov) return []
-    // Backward compatibility for Damascus
-    if (gov.municipalities) {
-      return gov.municipalities.reduce((acc, mun) => {
-        acc.push({ id: mun.id, name: mun.name })
-        return acc.concat(mun.neighborhoods)
-      }, [])
-    }
     return gov.districts || []
   }
 
   return syriaData.reduce((allDistricts, gov) => {
-    if (gov.municipalities) {
-      const flatDamascus = gov.municipalities.reduce((acc, mun) => {
-        acc.push({ id: mun.id, name: mun.name })
-        return acc.concat(mun.neighborhoods || [])
-      }, [])
-      return allDistricts.concat(flatDamascus)
-    }
     return allDistricts.concat(gov.districts || [])
   }, [])
 }
 
-function getMunicipalities (governorateId = 'dam') {
+function getMunicipalities (governorateId = 'gov-damascus') {
   const gov = syriaData.find(g => g.id === governorateId)
-  if (!gov || !gov.municipalities) return []
-  return gov.municipalities.map(m => ({ id: m.id, name: m.name }))
+  if (!gov || !gov.districts) return []
+  return gov.districts.reduce((acc, dist) => {
+    return acc.concat(dist.municipalities || [])
+  }, []).map(m => ({ id: m.id, name: m.name, pcode: m.pcode, coordinates: m.coordinates }))
 }
 
 function getNeighborhoods (municipalityId) {
   for (const gov of syriaData) {
-    if (gov.municipalities) {
-      const mun = gov.municipalities.find(m => m.id === municipalityId)
-      if (mun) return mun.neighborhoods || []
+    if (gov.districts) {
+      for (const dist of gov.districts) {
+        if (dist.municipalities) {
+          const mun = dist.municipalities.find(m => m.id === municipalityId)
+          if (mun) return mun.neighborhoods || []
+        }
+      }
     }
   }
   return []
@@ -60,7 +52,7 @@ function search (query) {
 
   syriaData.forEach(gov => {
     if (gov.name.en.toLowerCase().includes(q) || gov.name.ar.includes(q)) {
-      results.push({ type: 'governorate', item: { id: gov.id, name: gov.name } })
+      results.push({ type: 'governorate', item: { id: gov.id, name: gov.name, pcode: gov.pcode, coordinates: gov.coordinates } })
     }
 
     if (gov.districts) {
@@ -68,18 +60,18 @@ function search (query) {
         if (dist.name.en.toLowerCase().includes(q) || dist.name.ar.includes(q)) {
           results.push({ type: 'district', item: dist })
         }
-      })
-    }
-
-    if (gov.municipalities) {
-      gov.municipalities.forEach(mun => {
-        if (mun.name.en.toLowerCase().includes(q) || mun.name.ar.includes(q)) {
-          results.push({ type: 'municipality', item: { id: mun.id, name: mun.name } })
-        }
-        if (mun.neighborhoods) {
-          mun.neighborhoods.forEach(neigh => {
-            if (neigh.name.en.toLowerCase().includes(q) || neigh.name.ar.includes(q)) {
-              results.push({ type: 'neighborhood', item: neigh, municipalityId: mun.id })
+        
+        if (dist.municipalities) {
+          dist.municipalities.forEach(mun => {
+            if (mun.name.en.toLowerCase().includes(q) || mun.name.ar.includes(q)) {
+              results.push({ type: 'municipality', item: { id: mun.id, name: mun.name, pcode: mun.pcode, coordinates: mun.coordinates } })
+            }
+            if (mun.neighborhoods) {
+              mun.neighborhoods.forEach(neigh => {
+                if (neigh.name.en.toLowerCase().includes(q) || neigh.name.ar.includes(q)) {
+                  results.push({ type: 'neighborhood', item: neigh, municipalityId: mun.id })
+                }
+              })
             }
           })
         }
