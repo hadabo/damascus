@@ -1,9 +1,4 @@
-import { readFileSync } from 'fs'
-import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const syriaData = JSON.parse(readFileSync(join(__dirname, 'syria.json'), 'utf8'))
+import syriaData from './syria.js'
 
 function getAll () {
   return syriaData
