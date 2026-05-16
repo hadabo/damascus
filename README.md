@@ -1,4 +1,4 @@
-# Damascus
+# Syria Regions (focusing on Damascus)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/hadabo/damascus.svg)](https://greenkeeper.io/)
 [![Build Status][build-badge]][build]
@@ -7,7 +7,7 @@
 [![Damascus package][npm-dm]][damascus]
 [![Coverage Status][coveralls-badge]][coveralls]
 
-Get random districts names of Damascus.
+Get standardized, structured data for the governorates, districts, municipalities, and neighborhoods of Syria, with a **deep-dive into Damascus**. The data is bilingual (Arabic and English) and structured to align with UN OCHA Common Operational Datasets (COD), making it the perfect source of truth for cascading dropdowns and autocompletes in applications like real estate listings, directories, and delivery platforms.
 
 ## Installation
 
@@ -16,17 +16,77 @@ This package is distributed via npm:
 npm install damascus
 ```
 
+## Features
+
+- **Hierarchical Damascus Data**: Perfect for UI components (Select Governorate -> Select Municipality -> Select Neighborhood).
+- **Search Utility**: Built-in search function to easily query the data for autocompletes.
+- **Bilingual**: All items include English (`en`) and Arabic (`ar`) names.
+- **TypeScript Support**: Includes type definitions (`.d.ts`) out of the box for excellent IDE support.
+- **Backward Compatible**: Maintains support for legacy `getDistricts()` API.
+
 ## Usage
+
 ```javascript
-var damascus = require('damascus');
-var allNames = damascus.all;
-var randomName = damascus.random();
-var threeRandomNames = damascus.random(3);
+const syria = require('damascus');
+
+// 1. Get all structured data
+const allData = syria.getAll();
+
+// 2. Get an array of the 14 Syrian governorates
+const governorates = syria.getGovernorates();
+/* 
+[
+  { id: 'dam', name: { en: 'Damascus', ar: 'دمشق' } },
+  { id: 'ale', name: { en: 'Aleppo', ar: 'حلب' } },
+  ...
+]
+*/
+
+// 3. Damascus Specific APIs (Hierarchical)
+const damascusMunicipalities = syria.getMunicipalities('dam'); // or just getMunicipalities()
+/*
+[
+  { id: 'dam-municipality-ancient-city-old-city', name: { en: 'Ancient City (Old City)', ar: 'المدينة القديمة' } },
+  ...
+]
+*/
+
+const oldCityNeighborhoods = syria.getNeighborhoods('dam-municipality-ancient-city-old-city');
+/*
+[
+  { id: 'dam-districts-bab-tuma', name: { en: 'Bab Tuma', ar: 'باب توما' } },
+  ...
+]
+*/
+
+// 4. Search API (Perfect for Autocomplete)
+const searchResults = syria.search('Bab Tuma'); // Search in Arabic or English
+/*
+[
+  { 
+    type: 'neighborhood', 
+    item: { id: 'dam-districts-bab-tuma', name: { en: 'Bab Tuma', ar: 'باب توما' } },
+    municipalityId: 'dam-municipality-ancient-city-old-city' 
+  }
+]
+*/
+
+// 5. Legacy API (Flat districts)
+const damascusDistrictsFlat = syria.getDistricts('dam'); 
+```
+
+## Typescript
+
+If you are using TypeScript, you can import the types natively:
+
+```typescript
+import { search, SearchResult, Municipality, Neighborhood } from 'damascus';
+
+const result: SearchResult[] = search('دمشق');
 ```
 
 ## Other
-This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) as a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release). 
-
+This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) as a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release), and expanded to be a robust source of truth for Syrian regional data.
 
 [build-badge]: https://img.shields.io/travis/hadabo/damascus.svg?style=flat-square
 [build]: https://travis-ci.org/hadabo/damascus

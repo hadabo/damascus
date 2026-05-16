@@ -1,0 +1,1441 @@
+[
+  {
+    "id": "dam",
+    "name": {
+      "en": "Damascus",
+      "ar": "دمشق"
+    },
+    "municipalities": [
+      {
+        "id": "dam-municipality-ancient-city-old-city",
+        "name": {
+          "en": "Ancient City (Old City)",
+          "ar": "المدينة القديمة"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-amarah-juwaniyyah",
+            "name": {
+              "en": "Amarah Juwaniyyah",
+              "ar": "العمارة الجوانية"
+            }
+          },
+          {
+            "id": "dam-districts-al-amin",
+            "name": {
+              "en": "Al-Amin",
+              "ar": "الأمين"
+            }
+          },
+          {
+            "id": "dam-districts-bab-tuma",
+            "name": {
+              "en": "Bab Tuma",
+              "ar": "باب توما"
+            }
+          },
+          {
+            "id": "dam-districts-al-hamidiyya",
+            "name": {
+              "en": "Al-Hamidiyya",
+              "ar": "الحميدية"
+            }
+          },
+          {
+            "id": "dam-districts-al-hariqa",
+            "name": {
+              "en": "Al-Hariqa",
+              "ar": "الحريقة"
+            }
+          },
+          {
+            "id": "dam-districts-jura",
+            "name": {
+              "en": "Jura",
+              "ar": "الجورة"
+            }
+          },
+          {
+            "id": "dam-districts-ma-azanat-ash-shahm",
+            "name": {
+              "en": "Ma'azanat ash-Shahm",
+              "ar": "مئذنة الشحم"
+            }
+          },
+          {
+            "id": "dam-districts-qaymariyya",
+            "name": {
+              "en": "Qaymariyya",
+              "ar": "القيمرية"
+            }
+          },
+          {
+            "id": "dam-districts-shaghour-al-juwani",
+            "name": {
+              "en": "Shaghour al-Juwani",
+              "ar": "الشاغور الجواني"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-barzeh",
+        "name": {
+          "en": "Barzeh",
+          "ar": "برزة"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-abbas",
+            "name": {
+              "en": "Al-Abbas",
+              "ar": "العباس"
+            }
+          },
+          {
+            "id": "dam-districts-barza-al-balad",
+            "name": {
+              "en": "Barza al-Balad",
+              "ar": "برزة البلد"
+            }
+          },
+          {
+            "id": "dam-districts-ish-al-warwar",
+            "name": {
+              "en": "Ish al-Warwar",
+              "ar": "عش الورور"
+            }
+          },
+          {
+            "id": "dam-districts-al-manara",
+            "name": {
+              "en": "Al-Manara",
+              "ar": "المنارة"
+            }
+          },
+          {
+            "id": "dam-districts-masakin-barzeh",
+            "name": {
+              "en": "Masakin Barzeh",
+              "ar": "مساكن برزة"
+            }
+          },
+          {
+            "id": "dam-districts-an-nuzha",
+            "name": {
+              "en": "An-Nuzha",
+              "ar": "النزهة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-dummar",
+        "name": {
+          "en": "Dummar",
+          "ar": "دمر"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-arin",
+            "name": {
+              "en": "Al-Arin",
+              "ar": "العرين"
+            }
+          },
+          {
+            "id": "dam-districts-dahiyet-dummar",
+            "name": {
+              "en": "Dahiyet Dummar",
+              "ar": "ضاحية دمر"
+            }
+          },
+          {
+            "id": "dam-districts-dummar-al-gharbiyah",
+            "name": {
+              "en": "Dummar al-Gharbiyah",
+              "ar": "دمر الغربية"
+            }
+          },
+          {
+            "id": "dam-districts-dummar-al-sharqiyah",
+            "name": {
+              "en": "Dummar al-Sharqiyah",
+              "ar": "دمر الشرقية"
+            }
+          },
+          {
+            "id": "dam-districts-al-wuroud",
+            "name": {
+              "en": "Al-Wuroud",
+              "ar": "الورود"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-jobar",
+        "name": {
+          "en": "Jobar",
+          "ar": "جوبر"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-jobar-gharbi",
+            "name": {
+              "en": "Jobar Gharbi",
+              "ar": "جوبر الغربي"
+            }
+          },
+          {
+            "id": "dam-districts-jobar-sharqi",
+            "name": {
+              "en": "Jobar Sharqi",
+              "ar": "جوبر الشرقي"
+            }
+          },
+          {
+            "id": "dam-districts-al-istiqlal",
+            "name": {
+              "en": "Al-Istiqlal",
+              "ar": "الاستقلال"
+            }
+          },
+          {
+            "id": "dam-districts-al-ma-muniyah",
+            "name": {
+              "en": "Al-Ma'muniyah",
+              "ar": "المأمونية"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-qanawat",
+        "name": {
+          "en": "Qanawat",
+          "ar": "القنوات"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-ansari",
+            "name": {
+              "en": "Ansari",
+              "ar": "الأنصاري"
+            }
+          },
+          {
+            "id": "dam-districts-bab-al-jabiyah",
+            "name": {
+              "en": "Bab al-Jabiyah",
+              "ar": "باب الجابية"
+            }
+          },
+          {
+            "id": "dam-districts-bab-sreijeh",
+            "name": {
+              "en": "Bab Sreijeh",
+              "ar": "باب سريجة"
+            }
+          },
+          {
+            "id": "dam-districts-baramkeh",
+            "name": {
+              "en": "Baramkeh",
+              "ar": "البرامكة"
+            }
+          },
+          {
+            "id": "dam-districts-al-hijaz",
+            "name": {
+              "en": "Al-Hijaz",
+              "ar": "الحجاز"
+            }
+          },
+          {
+            "id": "dam-districts-mujtahid",
+            "name": {
+              "en": "Mujtahid",
+              "ar": "المجتهد"
+            }
+          },
+          {
+            "id": "dam-districts-qanawat",
+            "name": {
+              "en": "Qanawat",
+              "ar": "القنوات"
+            }
+          },
+          {
+            "id": "dam-districts-qabr-atikah",
+            "name": {
+              "en": "Qabr Atikah",
+              "ar": "قبر عاتكة"
+            }
+          },
+          {
+            "id": "dam-districts-al-suwayqah",
+            "name": {
+              "en": "Al-Suwayqah",
+              "ar": "السويقة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-kafr-souseh",
+        "name": {
+          "en": "Kafr Souseh",
+          "ar": "كفر سوسة"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-fardos",
+            "name": {
+              "en": "Fardos",
+              "ar": "الفردوس"
+            }
+          },
+          {
+            "id": "dam-districts-al-ikhlas",
+            "name": {
+              "en": "Al-Ikhlas",
+              "ar": "الإخلاص"
+            }
+          },
+          {
+            "id": "dam-districts-kafr-souseh-al-balad",
+            "name": {
+              "en": "Kafr Souseh al-Balad",
+              "ar": "كفر سوسة البلد"
+            }
+          },
+          {
+            "id": "dam-districts-al-liwan",
+            "name": {
+              "en": "Al-Liwan",
+              "ar": "الليوان"
+            }
+          },
+          {
+            "id": "dam-districts-mezzeh-al-basatin",
+            "name": {
+              "en": "Mezzeh al-Basatin",
+              "ar": "مزة البساتين"
+            }
+          },
+          {
+            "id": "dam-districts-al-waha",
+            "name": {
+              "en": "Al-Waha",
+              "ar": "الواحة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-mezzeh",
+        "name": {
+          "en": "Mezzeh",
+          "ar": "المزة"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-jalaa",
+            "name": {
+              "en": "Al-Jalaa",
+              "ar": "الجلاء"
+            }
+          },
+          {
+            "id": "dam-districts-fe-alat-al-gharbiyah",
+            "name": {
+              "en": "Fe'alat al-Gharbiyah",
+              "ar": "الفيلات الغربية"
+            }
+          },
+          {
+            "id": "dam-districts-fe-alat-al-sharqiyah",
+            "name": {
+              "en": "Fe'alat al-Sharqiyah",
+              "ar": "الفيلات الشرقية"
+            }
+          },
+          {
+            "id": "dam-districts-mezzeh-86",
+            "name": {
+              "en": "Mezzeh 86",
+              "ar": "مزة 86"
+            }
+          },
+          {
+            "id": "dam-districts-mezzeh-al-qadimeh",
+            "name": {
+              "en": "Mezzeh al-Qadimeh",
+              "ar": "المزة القديمة"
+            }
+          },
+          {
+            "id": "dam-districts-mezzeh-jabal",
+            "name": {
+              "en": "Mezzeh Jabal",
+              "ar": "مزة جبل"
+            }
+          },
+          {
+            "id": "dam-districts-al-rabwa",
+            "name": {
+              "en": "Al-Rabwa",
+              "ar": "الربوة"
+            }
+          },
+          {
+            "id": "dam-districts-al-sumariyah",
+            "name": {
+              "en": "Al-Sumariyah",
+              "ar": "السومرية"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-al-midan",
+        "name": {
+          "en": "Al-Midan",
+          "ar": "الميدان"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-bab-masr",
+            "name": {
+              "en": "Bab Masr",
+              "ar": "باب مصر"
+            }
+          },
+          {
+            "id": "dam-districts-daqaq",
+            "name": {
+              "en": "Daqaq",
+              "ar": "الدقاق"
+            }
+          },
+          {
+            "id": "dam-districts-al-haqleh",
+            "name": {
+              "en": "Al-Haqleh",
+              "ar": "الحقلة"
+            }
+          },
+          {
+            "id": "dam-districts-al-qa-a",
+            "name": {
+              "en": "Al-Qa'a",
+              "ar": "القاعة"
+            }
+          },
+          {
+            "id": "dam-districts-midan-al-wastani",
+            "name": {
+              "en": "Midan al-Wastani",
+              "ar": "الميدان الوسطاني"
+            }
+          },
+          {
+            "id": "dam-districts-al-tadamon",
+            "name": {
+              "en": "Al-Tadamon",
+              "ar": "التضامن"
+            }
+          },
+          {
+            "id": "dam-districts-az-zahreh",
+            "name": {
+              "en": "Az-Zahreh",
+              "ar": "الزاهرة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-al-muhajirin",
+        "name": {
+          "en": "Al-Muhajirin",
+          "ar": "المهاجرين"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-abu-rummaneh",
+            "name": {
+              "en": "Abu Rummaneh",
+              "ar": "أبو رمانة"
+            }
+          },
+          {
+            "id": "dam-districts-a-haboubi",
+            "name": {
+              "en": "A-Haboubi",
+              "ar": "الحبوبي"
+            }
+          },
+          {
+            "id": "dam-districts-al-maliki",
+            "name": {
+              "en": "Al-Maliki",
+              "ar": "المالكي"
+            }
+          },
+          {
+            "id": "dam-districts-al-marabit",
+            "name": {
+              "en": "Al-Marabit",
+              "ar": "المرابط"
+            }
+          },
+          {
+            "id": "dam-districts-al-mastaba",
+            "name": {
+              "en": "Al-Mastaba",
+              "ar": "المصطبة"
+            }
+          },
+          {
+            "id": "dam-districts-al-rawda",
+            "name": {
+              "en": "Al-Rawda",
+              "ar": "الروضة"
+            }
+          },
+          {
+            "id": "dam-districts-shura",
+            "name": {
+              "en": "Shura",
+              "ar": "الشورى"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-qaboun",
+        "name": {
+          "en": "Qaboun",
+          "ar": "القابون"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-masaneh",
+            "name": {
+              "en": "Al-Masaneh'",
+              "ar": "المصانع"
+            }
+          },
+          {
+            "id": "dam-districts-qaboun",
+            "name": {
+              "en": "Qaboun",
+              "ar": "القابون"
+            }
+          },
+          {
+            "id": "dam-districts-tishrin",
+            "name": {
+              "en": "Tishrin",
+              "ar": "تشرين"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-qadam",
+        "name": {
+          "en": "Qadam",
+          "ar": "القدم"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-asali",
+            "name": {
+              "en": "Al-Asali",
+              "ar": "العسالي"
+            }
+          },
+          {
+            "id": "dam-districts-dahadil",
+            "name": {
+              "en": "Dahadil",
+              "ar": "الدحاديل"
+            }
+          },
+          {
+            "id": "dam-districts-jouret-al-shreibati",
+            "name": {
+              "en": "Jouret al-Shreibati",
+              "ar": "جورة الشريباتي"
+            }
+          },
+          {
+            "id": "dam-districts-al-mustafa",
+            "name": {
+              "en": "Al-Mustafa",
+              "ar": "المصطفى"
+            }
+          },
+          {
+            "id": "dam-districts-al-qadam",
+            "name": {
+              "en": "Al-Qadam",
+              "ar": "القدم"
+            }
+          },
+          {
+            "id": "dam-districts-qadam-sharqi",
+            "name": {
+              "en": "Qadam Sharqi",
+              "ar": "قدم شرقي"
+            }
+          },
+          {
+            "id": "dam-districts-al-sayyidah-aisha",
+            "name": {
+              "en": "Al-Sayyidah Aisha",
+              "ar": "السيدة عائشة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-rukn-ad-din",
+        "name": {
+          "en": "Rukn ad-Din",
+          "ar": "ركن الدين"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-asad-ad-din",
+            "name": {
+              "en": "Asad ad-Din",
+              "ar": "أسد الدين"
+            }
+          },
+          {
+            "id": "dam-districts-ayyubiyah",
+            "name": {
+              "en": "Ayyubiyah",
+              "ar": "الأيوبية"
+            }
+          },
+          {
+            "id": "dam-districts-al-fayhaa",
+            "name": {
+              "en": "Al-Fayhaa",
+              "ar": "الفيحاء"
+            }
+          },
+          {
+            "id": "dam-districts-al-naqshabandi",
+            "name": {
+              "en": "Al-Naqshabandi",
+              "ar": "النقشبندي"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-al-salihiyah",
+        "name": {
+          "en": "Al-Salihiyah",
+          "ar": "الصالحية"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-abu-jarash",
+            "name": {
+              "en": "Abu Jarash",
+              "ar": "أبو جرش"
+            }
+          },
+          {
+            "id": "dam-districts-al-madaris",
+            "name": {
+              "en": "Al-Madaris",
+              "ar": "المدارس"
+            }
+          },
+          {
+            "id": "dam-districts-al-mazra-a",
+            "name": {
+              "en": "Al-Mazra'a",
+              "ar": "المزرعة"
+            }
+          },
+          {
+            "id": "dam-districts-qasyoun",
+            "name": {
+              "en": "Qasyoun",
+              "ar": "قاسيون"
+            }
+          },
+          {
+            "id": "dam-districts-shaykh-muhyi-ad-din",
+            "name": {
+              "en": "Shaykh Muhyi ad-Din",
+              "ar": "الشيخ محي الدين"
+            }
+          },
+          {
+            "id": "dam-districts-ash-shuhada",
+            "name": {
+              "en": "Ash-Shuhada",
+              "ar": "الشهداء"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-sarouja",
+        "name": {
+          "en": "Sarouja",
+          "ar": "ساروجة"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-adwi",
+            "name": {
+              "en": "Al-Adwi",
+              "ar": "العدوي"
+            }
+          },
+          {
+            "id": "dam-districts-amarah-al-barraniyah",
+            "name": {
+              "en": "Amarah al-Barraniyah",
+              "ar": "العمارة البرانية"
+            }
+          },
+          {
+            "id": "dam-districts-fares-al-khoury",
+            "name": {
+              "en": "Fares al-Khoury",
+              "ar": "فارس الخوري"
+            }
+          },
+          {
+            "id": "dam-districts-masjid-aqsab",
+            "name": {
+              "en": "Masjid Aqsab",
+              "ar": "مسجد أقصاب"
+            }
+          },
+          {
+            "id": "dam-districts-al-qassaa",
+            "name": {
+              "en": "Al-Qassaa",
+              "ar": "القصاع"
+            }
+          },
+          {
+            "id": "dam-districts-al-qusour",
+            "name": {
+              "en": "Al-Qusour",
+              "ar": "القصور"
+            }
+          },
+          {
+            "id": "dam-districts-al-uqaybah",
+            "name": {
+              "en": "Al-Uqaybah",
+              "ar": "العقيبة"
+            }
+          },
+          {
+            "id": "dam-districts-sarouja",
+            "name": {
+              "en": "Sarouja",
+              "ar": "ساروجة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-al-shaghour",
+        "name": {
+          "en": "Al-Shaghour",
+          "ar": "الشاغور"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-bab-sharqi",
+            "name": {
+              "en": "Bab Sharqi",
+              "ar": "باب شرقي"
+            }
+          },
+          {
+            "id": "dam-districts-al-bilal",
+            "name": {
+              "en": "Al-Bilal",
+              "ar": "بلال"
+            }
+          },
+          {
+            "id": "dam-districts-ibn-asakir",
+            "name": {
+              "en": "Ibn Asakir",
+              "ar": "ابن عساكر"
+            }
+          },
+          {
+            "id": "dam-districts-al-nidal",
+            "name": {
+              "en": "Al-Nidal",
+              "ar": "النضال"
+            }
+          },
+          {
+            "id": "dam-districts-rawdat-al-midan",
+            "name": {
+              "en": "Rawdat al-Midan",
+              "ar": "روضة الميدان"
+            }
+          },
+          {
+            "id": "dam-districts-shaghour-al-barrani",
+            "name": {
+              "en": "Shaghour al-Barrani",
+              "ar": "الشاغور البراني"
+            }
+          },
+          {
+            "id": "dam-districts-al-wihdeh",
+            "name": {
+              "en": "Al-Wihdeh",
+              "ar": "الوحدة"
+            }
+          },
+          {
+            "id": "dam-districts-az-zuhur",
+            "name": {
+              "en": "Az-Zuhur",
+              "ar": "الزهور"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dam-municipality-yarmouk",
+        "name": {
+          "en": "Yarmouk",
+          "ar": "اليرموك"
+        },
+        "neighborhoods": [
+          {
+            "id": "dam-districts-al-faluja",
+            "name": {
+              "en": "Al-Faluja",
+              "ar": "الفلوجة"
+            }
+          },
+          {
+            "id": "dam-districts-hittin",
+            "name": {
+              "en": "Hittin",
+              "ar": "حطين"
+            }
+          },
+          {
+            "id": "dam-districts-al-karmil",
+            "name": {
+              "en": "Al-Karmil",
+              "ar": "الكرمل"
+            }
+          },
+          {
+            "id": "dam-districts-an-naseriyah",
+            "name": {
+              "en": "An-Naseriyah",
+              "ar": "الناصرية"
+            }
+          },
+          {
+            "id": "dam-districts-march-8th",
+            "name": {
+              "en": "March 8th",
+              "ar": "8 آذار"
+            }
+          },
+          {
+            "id": "dam-districts-al-taqqadum",
+            "name": {
+              "en": "Al-Taqqadum",
+              "ar": "التقدم"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rif",
+    "name": {
+      "en": "Rif Dimashq",
+      "ar": "ريف دمشق"
+    },
+    "districts": [
+      {
+        "id": "rif-markaz",
+        "name": {
+          "en": "Markaz Rif Dimashq",
+          "ar": "مركز ريف دمشق"
+        }
+      },
+      {
+        "id": "rif-douma",
+        "name": {
+          "en": "Douma",
+          "ar": "دوما"
+        }
+      },
+      {
+        "id": "rif-al-qutayfah",
+        "name": {
+          "en": "Al-Qutayfah",
+          "ar": "القطيفة"
+        }
+      },
+      {
+        "id": "rif-al-tall",
+        "name": {
+          "en": "Al-Tall",
+          "ar": "التل"
+        }
+      },
+      {
+        "id": "rif-yabroud",
+        "name": {
+          "en": "Yabroud",
+          "ar": "يبرود"
+        }
+      },
+      {
+        "id": "rif-an-nabk",
+        "name": {
+          "en": "An-Nabk",
+          "ar": "النبك"
+        }
+      },
+      {
+        "id": "rif-zabadani",
+        "name": {
+          "en": "Al-Zabadani",
+          "ar": "الزبداني"
+        }
+      },
+      {
+        "id": "rif-qatana",
+        "name": {
+          "en": "Qatana",
+          "ar": "قطنا"
+        }
+      },
+      {
+        "id": "rif-darayya",
+        "name": {
+          "en": "Darayya",
+          "ar": "داريا"
+        }
+      },
+      {
+        "id": "rif-qudsaya",
+        "name": {
+          "en": "Qudsaya",
+          "ar": "قدسيا"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ale",
+    "name": {
+      "en": "Aleppo",
+      "ar": "حلب"
+    },
+    "districts": [
+      {
+        "id": "ale-mt-simeon",
+        "name": {
+          "en": "Mount Simeon",
+          "ar": "جبل سمعان"
+        }
+      },
+      {
+        "id": "ale-afrin",
+        "name": {
+          "en": "Afrin",
+          "ar": "عفرين"
+        }
+      },
+      {
+        "id": "ale-azaz",
+        "name": {
+          "en": "Azaz",
+          "ar": "أعزاز"
+        }
+      },
+      {
+        "id": "ale-safira",
+        "name": {
+          "en": "Al-Safira",
+          "ar": "السفيرة"
+        }
+      },
+      {
+        "id": "ale-al-bab",
+        "name": {
+          "en": "Al-Bab",
+          "ar": "الباب"
+        }
+      },
+      {
+        "id": "ale-manbij",
+        "name": {
+          "en": "Manbij",
+          "ar": "منبج"
+        }
+      },
+      {
+        "id": "ale-jarabulus",
+        "name": {
+          "en": "Jarabulus",
+          "ar": "جرابلس"
+        }
+      },
+      {
+        "id": "ale-ayn-al-arab",
+        "name": {
+          "en": "Ayn al-Arab (Kobani)",
+          "ar": "عين العرب"
+        }
+      },
+      {
+        "id": "ale-atarib",
+        "name": {
+          "en": "Atarib",
+          "ar": "الأتارب"
+        }
+      },
+      {
+        "id": "ale-dayr-hafir",
+        "name": {
+          "en": "Dayr Hafir",
+          "ar": "دير حافر"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hom",
+    "name": {
+      "en": "Homs",
+      "ar": "حمص"
+    },
+    "districts": [
+      {
+        "id": "hom-homs",
+        "name": {
+          "en": "Homs",
+          "ar": "حمص"
+        }
+      },
+      {
+        "id": "hom-al-mukharram",
+        "name": {
+          "en": "Al-Mukharram",
+          "ar": "المخرم"
+        }
+      },
+      {
+        "id": "hom-ar-rastan",
+        "name": {
+          "en": "Al-Rastan",
+          "ar": "الرستن"
+        }
+      },
+      {
+        "id": "hom-al-qusayr",
+        "name": {
+          "en": "Al-Qusayr",
+          "ar": "القصير"
+        }
+      },
+      {
+        "id": "hom-tadmur",
+        "name": {
+          "en": "Tadmur (Palmyra)",
+          "ar": "تدمر"
+        }
+      },
+      {
+        "id": "hom-taldou",
+        "name": {
+          "en": "Taldou",
+          "ar": "تلدو"
+        }
+      },
+      {
+        "id": "hom-talkalakh",
+        "name": {
+          "en": "Talkalakh",
+          "ar": "تلكلخ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ham",
+    "name": {
+      "en": "Hama",
+      "ar": "حماة"
+    },
+    "districts": [
+      {
+        "id": "ham-hama",
+        "name": {
+          "en": "Hama",
+          "ar": "حماة"
+        }
+      },
+      {
+        "id": "ham-al-suqaylabiyah",
+        "name": {
+          "en": "Al-Suqaylabiyah",
+          "ar": "السقيلبية"
+        }
+      },
+      {
+        "id": "ham-muhardeh",
+        "name": {
+          "en": "Muhardeh",
+          "ar": "محردة"
+        }
+      },
+      {
+        "id": "ham-masyaf",
+        "name": {
+          "en": "Masyaf",
+          "ar": "مصياف"
+        }
+      },
+      {
+        "id": "ham-salamiyah",
+        "name": {
+          "en": "Salamiyah",
+          "ar": "سلمية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lat",
+    "name": {
+      "en": "Latakia",
+      "ar": "اللاذقية"
+    },
+    "districts": [
+      {
+        "id": "lat-latakia",
+        "name": {
+          "en": "Latakia",
+          "ar": "اللاذقية"
+        }
+      },
+      {
+        "id": "lat-jableh",
+        "name": {
+          "en": "Jableh",
+          "ar": "جبلة"
+        }
+      },
+      {
+        "id": "lat-al-haffah",
+        "name": {
+          "en": "Al-Haffah",
+          "ar": "الحفة"
+        }
+      },
+      {
+        "id": "lat-al-qardaha",
+        "name": {
+          "en": "Al-Qardaha",
+          "ar": "القرداحة"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tar",
+    "name": {
+      "en": "Tartus",
+      "ar": "طرطوس"
+    },
+    "districts": [
+      {
+        "id": "tar-tartus",
+        "name": {
+          "en": "Tartus",
+          "ar": "طرطوس"
+        }
+      },
+      {
+        "id": "tar-safita",
+        "name": {
+          "en": "Safita",
+          "ar": "صافيتا"
+        }
+      },
+      {
+        "id": "tar-duraykish",
+        "name": {
+          "en": "Duraykish",
+          "ar": "دريكيش"
+        }
+      },
+      {
+        "id": "tar-al-shaykh-badr",
+        "name": {
+          "en": "Al-Shaykh Badr",
+          "ar": "الشيخ بدر"
+        }
+      },
+      {
+        "id": "tar-baniyas",
+        "name": {
+          "en": "Baniyas",
+          "ar": "بانياس"
+        }
+      }
+    ]
+  },
+  {
+    "id": "idl",
+    "name": {
+      "en": "Idlib",
+      "ar": "إدلب"
+    },
+    "districts": [
+      {
+        "id": "idl-idlib",
+        "name": {
+          "en": "Idlib",
+          "ar": "إدلب"
+        }
+      },
+      {
+        "id": "idl-maarrat-al-numan",
+        "name": {
+          "en": "Ma'arrat al-Nu'man",
+          "ar": "معرة النعمان"
+        }
+      },
+      {
+        "id": "idl-ariha",
+        "name": {
+          "en": "Ariha",
+          "ar": "أريحا"
+        }
+      },
+      {
+        "id": "idl-harem",
+        "name": {
+          "en": "Harem",
+          "ar": "حارم"
+        }
+      },
+      {
+        "id": "idl-jisr-al-shughur",
+        "name": {
+          "en": "Jisr al-Shughur",
+          "ar": "جسر الشغور"
+        }
+      }
+    ]
+  },
+  {
+    "id": "raq",
+    "name": {
+      "en": "Raqqa",
+      "ar": "الرقة"
+    },
+    "districts": [
+      {
+        "id": "raq-raqqa",
+        "name": {
+          "en": "Raqqa",
+          "ar": "الرقة"
+        }
+      },
+      {
+        "id": "raq-al-thawrah",
+        "name": {
+          "en": "Al-Thawrah",
+          "ar": "الثورة"
+        }
+      },
+      {
+        "id": "raq-tal-abyad",
+        "name": {
+          "en": "Tal Abyad",
+          "ar": "تل أبيض"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dei",
+    "name": {
+      "en": "Deir ez-Zor",
+      "ar": "دير الزور"
+    },
+    "districts": [
+      {
+        "id": "dei-deir-ez-zor",
+        "name": {
+          "en": "Deir ez-Zor",
+          "ar": "دير الزور"
+        }
+      },
+      {
+        "id": "dei-al-mayadin",
+        "name": {
+          "en": "Al-Mayadin",
+          "ar": "الميادين"
+        }
+      },
+      {
+        "id": "dei-abu-kamal",
+        "name": {
+          "en": "Abu Kamal",
+          "ar": "البوكمال"
+        }
+      }
+    ]
+  },
+  {
+    "id": "has",
+    "name": {
+      "en": "Al-Hasakah",
+      "ar": "الحسكة"
+    },
+    "districts": [
+      {
+        "id": "has-al-hasakah",
+        "name": {
+          "en": "Al-Hasakah",
+          "ar": "الحسكة"
+        }
+      },
+      {
+        "id": "has-al-qamishli",
+        "name": {
+          "en": "Al-Qamishli",
+          "ar": "القامشلي"
+        }
+      },
+      {
+        "id": "has-al-malikiyah",
+        "name": {
+          "en": "Al-Malikiyah",
+          "ar": "المالكية"
+        }
+      },
+      {
+        "id": "has-ras-al-ayn",
+        "name": {
+          "en": "Ras al-Ayn",
+          "ar": "رأس العين"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dar",
+    "name": {
+      "en": "Daraa",
+      "ar": "درعا"
+    },
+    "districts": [
+      {
+        "id": "dar-daraa",
+        "name": {
+          "en": "Daraa",
+          "ar": "درعا"
+        }
+      },
+      {
+        "id": "dar-izra",
+        "name": {
+          "en": "Izra",
+          "ar": "إزرع"
+        }
+      },
+      {
+        "id": "dar-al-sanamayn",
+        "name": {
+          "en": "Al-Sanamayn",
+          "ar": "الصنمين"
+        }
+      }
+    ]
+  },
+  {
+    "id": "suw",
+    "name": {
+      "en": "As-Suwayda",
+      "ar": "السويداء"
+    },
+    "districts": [
+      {
+        "id": "suw-as-suwayda",
+        "name": {
+          "en": "As-Suwayda",
+          "ar": "السويداء"
+        }
+      },
+      {
+        "id": "suw-salkhad",
+        "name": {
+          "en": "Salkhad",
+          "ar": "صلخد"
+        }
+      },
+      {
+        "id": "suw-shahba",
+        "name": {
+          "en": "Shahba",
+          "ar": "شهبا"
+        }
+      }
+    ]
+  },
+  {
+    "id": "qun",
+    "name": {
+      "en": "Quneitra",
+      "ar": "القنيطرة"
+    },
+    "districts": [
+      {
+        "id": "qun-quneitra",
+        "name": {
+          "en": "Quneitra",
+          "ar": "القنيطرة"
+        }
+      },
+      {
+        "id": "qun-fiq",
+        "name": {
+          "en": "Fiq",
+          "ar": "فيق"
+        }
+      }
+    ]
+  }
+]

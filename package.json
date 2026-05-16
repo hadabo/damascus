@@ -1,15 +1,16 @@
 {
   "name": "damascus",
   "version": "0.0.0-development",
-  "description": "Get random districts names of Damascus or all of them",
+  "description": "Get random cities, districts, and governorates of Syria",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "precommit": "npm test",
     "commit": "git-cz",
-    "lint": "eslint --fix src/*.js",
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "semantic-release": "semantic-release"
+    "lint": "eslint src/*.js",
+    "test": "c8 mocha",
+    "coverage": "c8 report --reporter=text-lcov | coveralls",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
     "random",
     "damascus",
     "syria",
-    "districts"
+    "districts",
+    "cities",
+    "governorates"
   ],
   "author": "Abdul-hadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
   "license": "MIT",
@@ -27,24 +30,18 @@
     "url": "https://github.com/hadabo/damascus/issues"
   },
   "homepage": "https://github.com/hadabo/damascus#readme",
-  "dependencies": {
-    "unique-random-array": "2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "chai": "4.2.0",
-    "commitizen": "4.0.3",
-    "coveralls": "^3.0.7",
-    "cz-conventional-changelog": "3.0.2",
-    "eslint": "6.6.0",
-    "eslint-config-standard": "14.1.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-node": "10.0.0",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.1",
-    "husky": "3.0.9",
-    "mocha": "^6.2.2",
-    "nyc": "^14.1.1",
-    "semantic-release": "^15.13.28"
+    "chai": "^5.1.1",
+    "commitizen": "^4.3.0",
+    "coveralls": "^3.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "mocha": "^10.4.0",
+    "c8": "^9.1.0",
+    "semantic-release": "^23.1.1"
   },
   "config": {
     "commitizen": {
