@@ -88,8 +88,8 @@ const result: SearchResult[] = search('دمشق');
 ## Other
 This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) as a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release), and expanded to be a robust source of truth for Syrian regional data.
 
-[build-badge]: https://img.shields.io/travis/hadabo/damascus.svg?style=flat-square
-[build]: https://travis-ci.org/hadabo/damascus
+[build-badge]: https://github.com/hadabo/damascus/actions/workflows/ci.yml/badge.svg
+[build]: https://github.com/hadabo/damascus/actions
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: https://github.com/hadabo/damascus/blob/master/LICENSE
 [semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
