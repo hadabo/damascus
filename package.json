@@ -1,13 +1,23 @@
 {
   "name": "damascus",
   "version": "0.0.0-development",
-  "description": "Get random cities, districts, and governorates of Syria",
+  "description": "Hierarchical source of truth for Syrian regional data, focusing on Damascus municipalities and neighborhoods aligned with UN OCHA standards.",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src"
+  ],
   "scripts": {
     "precommit": "npm test",
     "commit": "git-cz",
-    "lint": "eslint src/*.js",
+    "lint": "eslint src/*.js test/*.js",
+    "lint:fix": "eslint --fix src/*.js test/*.js",
     "test": "c8 mocha",
     "coverage": "c8 report --reporter=text-lcov | coveralls",
     "prepare": "husky"
@@ -17,14 +27,17 @@
     "url": "https://github.com/hadabo/damascus.git"
   },
   "keywords": [
-    "random",
     "damascus",
     "syria",
+    "regions",
+    "governorates",
+    "municipalities",
+    "neighborhoods",
     "districts",
-    "cities",
-    "governorates"
+    "ocha",
+    "data"
   ],
-  "author": "Abdul-hadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
+  "author": "Abdulhadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hadabo/damascus/issues"

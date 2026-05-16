@@ -12,7 +12,9 @@ export default [
     },
     rules: {
       "semi": ["error", "never"],
-      "quotes": ["error", "single"]
+      "quotes": ["error", "single"],
+      "indent": ["error", 2],
+      "linebreak-style": ["error", "unix"]
     }
   }
 ];
