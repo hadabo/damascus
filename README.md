@@ -1,6 +1,5 @@
 # Damascus (Syrian Regional Data API)
 
-[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/hadabo/damascus.svg?style=flat-square)](https://snyk.io/test/github/hadabo/damascus)
 [![Build Status][build-badge]][build]
 [![MIT License][license-badge]][LICENSE]
 [![Semantic release][semantic-release]][semantic]
